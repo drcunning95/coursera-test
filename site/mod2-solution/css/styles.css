@@ -1,26 +1,52 @@
 *{ 
 	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
 }
 
 h1{ 
-	margin-bottom: 15px;
+	margin: 15px;
 	text-align: center;
+	padding: 10px;
 }
 
 h2{
-	text-align: center;
+	background-color: lightblue;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	color: white;
 }
 
-p, li{   
+.leftMargin h2{
+	background-color: coral;
+}
+
+.rightMargin h2{
+	background-color:greenyellow;
+}
+
+div{
+	position: relative;
+
+}
+
+p{   
 	width: 90%; 
 	margin-right: auto; 
 	margin-left: auto; 
 	font-family: "Times New Roman", Times, serif; 
 	color: black; 
+	padding: 55px 0px 5px 0px;
 }
 
-.bordered{
+.box{
 	border: 1px solid black;
+	padding: 7.5px;
+	background-color: lightgray;
 }
 
 /*Simple Responsive Framework -- Non Bootstrap*/ 
@@ -33,7 +59,6 @@ p, li{
 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10,
 .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid blue;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -45,7 +70,7 @@ p, li{
     width: 25%;
   }
   .col-lg-4 {
-    width: 33.33%;
+    width: 29.33%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -71,6 +96,16 @@ p, li{
   .col-lg-12 {
     width: 100%;
   }
+  .leftMargin{
+  	margin-left: 2.75%;
+  }
+  .centerMargin{
+	margin-left: 2.75%;
+	margin-right: 2.75%;
+  }
+  .rightMargin{
+	margin-right: 2.75%;
+  }
 }
 
   /*Tablet Display*/ 
@@ -78,7 +113,6 @@ p, li{
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10,
 .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid blue;
   }
   .col-md-1 {
     width: 8.33%;
@@ -96,7 +130,7 @@ p, li{
     width: 41.66%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 42.5%;
   }
   .col-md-7 {
     width: 58.33%;
@@ -114,6 +148,27 @@ p, li{
     width: 91.66%;
   }
   .col-md-12 {
-    width: 100%;
+    width: 90%;
+  }
+  .leftMargin{
+  	margin-left: 5%;
+  }
+  .centerMargin{
+	margin-left: 5%;
+	margin-right: 5%;
+  }
+  .rightMargin{
+	margin-left: 5%;
+	margin-right: 5%;
+  }
+  .box{
+	margin-bottom: 5%;
+  }
+}
+
+/*Mobile Display*/ 
+@media (max-width: 767.9px){ 
+  .box{
+  	margin:5%;
   }
 }
