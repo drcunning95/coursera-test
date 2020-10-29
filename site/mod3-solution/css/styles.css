@@ -8,7 +8,7 @@
 .navbar-brand {
   padding-top: 5px;
 }
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand h1 { /* Site Name */
   font-family: sans-serif;
   color: black;
   font-size: 1.5em;
@@ -22,13 +22,13 @@
   text-decoration: none;
   color: black;
 }
-.navbar-brand p { /* Kosher cert */
+.navbar-brand p {
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
 }
-.navbar-brand p span { /* Star-K */
+.navbar-brand p span {
   vertical-align: middle;
 }
 
@@ -60,7 +60,7 @@
 
 .col-xs-12 {
   background-color: lightgray;
-  margin: 0 auto 0;
+  margin: 0 0px 0;
 }
 
 h1 {
@@ -72,11 +72,11 @@ h2 {
 }
 
 .mainContent {
-  margin: 0 15px 0;
+  margin: 0 30px 0;
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media /*(min-width: 768px) and*/ (max-width: 991px) {
   /* Home Page */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
@@ -84,7 +84,6 @@ h2 {
   }
 
   .mainContent {
-  width: 80%;
-  margin: 0 70px 0;
-}
+  margin: 0 75px 0;
+  }
 }
